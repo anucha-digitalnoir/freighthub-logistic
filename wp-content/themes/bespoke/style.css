@@ -1,0 +1,592 @@
+/*
+Theme Name: Bespoke Theme
+Author: PixelPong team
+Description: The theme for Bespoke project
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+/** Font Face **/
+@font-face {
+    font-family: 'Lato Light';
+    src: url('font/Lato-Light.eot'); /* IE9 Compat Modes */
+    src: url('font/Lato-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('font/Lato-Light.woff') format('woff'), /* Pretty Modern Browsers */
+    url('font/Lato-Light.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'Lato Bold';
+    src: url('font/Lato-Bold.eot'); /* IE9 Compat Modes */
+    src: url('font/Lato-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('font/Lato-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+    url('font/Lato-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'Neou Bold';
+    src: url('font/Neou-Bold.eot'); /* IE9 Compat Modes */
+    src: url('font/Neou-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('font/Neou-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+    url('font/Neou-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'Neou Thin';
+    src: url('font/Neou-Thin.eot'); /* IE9 Compat Modes */
+    src: url('font/Neou-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('font/Neou-Thin.woff') format('woff'), /* Pretty Modern Browsers */
+    url('font/Neou-Thin.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'jaspers_handwritingregular';
+    src: url('font/jaspershandwriting-webfont.eot');
+    src: url('font/jaspershandwriting-webfont.eot?#iefix') format('embedded-opentype'),
+    url('font/jaspershandwriting-webfont.woff2') format('woff2'),
+    url('font/jaspershandwriting-webfont.woff') format('woff'),
+    url('font/jaspershandwriting-webfont.ttf') format('truetype'),
+    url('font/jaspershandwriting-webfont.svg#jaspers_handwritingregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+section {
+    display: block;
+}
+header {
+    line-height: 40px;
+    font-size: 11px;
+    position: absolute;
+    width: 100%;
+    height: 36px;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    color: #fff;
+    font-family: 'Neou Bold';
+    letter-spacing: 4px;
+}
+.parallax {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+}
+.content {
+    font-family: 'Neou Thin';
+}
+.header-bg {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.7;
+}
+.nav-content {
+    position: relative;
+    z-index: 10;
+}
+.slogan {
+    float: left;
+    display: inline-block;
+}
+.s-thin {
+    font-family: "Neou Thin" !important;
+}
+.navigator-bar {
+    width: 100%;
+    float: left;
+    margin-top: -36px;
+}
+.navigator {
+    float: right;
+}
+.navigator ul{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+}
+.navigator ul li {
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+}
+.tel-no {
+    display: inline-block;
+    float: left;
+    padding-left: 40px;
+    background: url(image/phone-icon.png) 10px 7px no-repeat;
+}
+.content-body {
+    max-width: 1170px;
+    margin: 0px auto;
+}
+
+/** Section **/
+#section-logo {
+    padding: 225px 0px 240px 0px;
+    position: relative;
+}
+#section-logo .container {
+    position: relative;
+    z-index: 5;
+}
+.logo-bg-parallax{
+    /*background: url(image/section-1-bg.png) no-repeat;
+    background-size: 100% auto;
+    background-position: center;*/
+}
+.content-logo {
+    /*height: 250px;*/
+    /*background: url(image/content-logo.png) center center no-repeat;*/
+    text-align: center;
+}
+
+.content-logo img{
+    height: 220px;
+    margin-top: 17px;
+}
+.content-logo-slogan {
+    font-family: 'jaspers_handwritingregular';
+    margin-top: 40px;
+    height: 50px;
+    /*background: url(image/slogan.png) center center no-repeat;*/
+    background-size: 99% auto;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 6px;
+}
+
+#section-intro {
+    padding: 155px 0px 120px 0px;
+}
+.intro-header {
+    font-family: "Neou Bold";
+    letter-spacing: 6px;
+    font-size: 22.5px;
+    /*margin-bottom: 85px;*/
+    margin-bottom: 35px;
+}
+.orange {
+    color: #e47a1a;
+}
+.intro-body {
+    letter-spacing: 3px;
+    font-family: "Lato Light";
+    font-size: 14px;
+    line-height: 23px;
+}
+.intro-body p{
+    padding-right: 110px;
+    letter-spacing: 5px;
+    word-spacing: 3px;
+    margin-bottom: 20px;
+}
+.credit {
+    /*margin-top: 90px;*/
+    margin-top: 35px;
+    font-weight: bold;
+}
+
+#section-dream-plan {
+    padding: 270px 0px 316px 0px;
+    position: relative;
+}
+#section-dream-plan .container {
+    position: relative;
+    z-index: 5;
+}
+.dream-plan-parallax {
+    /*background: url(image/section-dream-bg.jpg) bottom no-repeat;*/
+    /*background: url(image/section-dream-bg.jpg) bottom no-repeat;*/
+    /*background-size: auto 200%;*/
+}
+.dream-icon {
+    height: 196px;
+    margin-left: 8.33333333%;
+    width: 16.66666667%;
+    float: left;
+    background: url(image/dream-icon.png) no-repeat;
+}
+.row .dream-icon + .dream-icon{
+    margin-left: 16.66666666%;
+}
+.dream-icon.dream {
+    background-position: 10px bottom;
+}
+.dream-icon.plan {
+    background-position: -218px bottom;
+}
+.dream-icon.build {
+    background-position: -415px bottom;
+}
+
+#section-gallery {
+    height: 780px;
+    position: relative;
+}
+#section-gallery img {
+    max-width: 100%;
+}
+#gallery {
+    width: 100%;
+    height: 100%;
+}
+.galery-item {
+    width: 100%;
+    height: 100%;
+    background-size: 100% auto !important;
+}
+/** Fix owl css */
+.owl-wrapper-outer,.owl-wrapper, .owl-item {
+    height: 100%;
+}
+.gallery-nav {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 4;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.gallery-nav:hover {
+    opacity: 1;
+}
+.gallery-nav.prev {
+    background: url(image/gallery-arrow.png) 40px center no-repeat;
+    top: 50%;
+    margin-top: -50px;
+    left: 20%;
+    margin-left: -50px;
+}
+.gallery-nav.next {
+    background: url(image/gallery-arrow.png) -115px center no-repeat;
+    top: 50%;
+    margin-top: -50px;
+    right: 20%;
+    margin-right: -50px;
+}
+
+.current > a{
+    color: #e47a1a !important;
+}
+
+#section-contact {
+    padding: 160px 0px 210px 0px;
+    background-color: #4c4c4c;
+    font-family: "Lato Light";
+    font-size: 14px;
+}
+#section-contact input[type="text"],#section-contact textarea {
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #fff;
+    background: none;
+}
+#section-contact textarea {
+    min-height: 224px;
+    resize: vertical;
+}
+#section-contact input[type="text"]:hover,#section-contact textarea:hover,
+#section-contact input[type="text"]:focus,#section-contact textarea:focus {
+    border-color: #e47a1a;
+}
+#section-contact .contact-submit-button {
+    margin-left: 500px;
+}
+#section-contact .back-button a {
+    width: 128px !important;
+    height: 40px;
+    background-color: #343434;
+    color: #fff;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+#section-contact .back-button a:hover {
+    background-color: #000;
+    color: #fff;
+}
+#section-contact .contact-submit-button input {
+    width: 128px !important;
+    height: 40px;
+    background-color: #c5c5c5;
+    color: #000;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+#section-contact .contact-submit-button input:hover {
+    background-color: #343434;
+    color: #fff;
+}
+::-moz-placeholder {
+    color: #fff;
+    letter-spacing: 4px;
+}
+:-ms-input-placeholder {
+    color: #fff;
+    letter-spacing: 4px;
+
+}
+::-webkit-input-placeholder {
+    color: #fff;
+    letter-spacing: 4px;
+}
+.contact-header {
+    font-family: "Neou Bold";
+    letter-spacing: 6px;
+    font-size: 22.5px;
+    margin-bottom: 85px;
+    color: #fff;
+}
+
+#section-site-url,#section-copyright {
+    padding: 25px 0px;
+    font-size: 11px;
+    font-family: "Lato Bold";
+    background-color: #343434;
+    letter-spacing: 4px;
+    color: #fff;
+}
+.col-2-link {
+    width: 50%;
+    float: left;
+}
+.icon-link {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: url(image/link-icon.png) no-repeat;
+}
+.icon-link.fb-link {
+    background-position: 15px center;
+}
+.icon-link.mail-link {
+    background-position: -42px center;
+}
+.link-icon-list {
+    text-align: center;
+    display: none;
+}
+.link-icon-list .icon-link + .icon-link {
+    margin-left: 60px;
+}
+#section-copyright {
+    background-color: #212121;
+    text-align: center;
+}
+
+#section-contact .gform_wrapper {
+    margin: 0;
+    width: 100%;
+}
+#section-contact .gform_wrapper form li  {
+    display: inline-block;
+    margin: auto;
+    margin-right: 97px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 390px;
+}
+#section-contact .gform_wrapper form li.message-box {
+    margin-right: 0px;
+}
+body #section-contact .gform_wrapper .ginput_container input,
+body #section-contact .gform_wrapper .ginput_container textarea{
+    width: 100% !important;
+}
+
+/* Success contact box */
+.success-contact{
+    text-transform: uppercase;
+}
+.success-contact>h2.contact-header{
+    line-height: 40px;
+}
+.success-contact img{
+    width: 120px;
+    height: auto;
+}
+
+.logo-contact-form img{
+    margin-top: -200px;
+}
+@media (max-width: 1530px) {
+    .galery-item {
+        background-size: auto 100% !important;
+    }
+}
+@media (max-width: 1199px) {
+    body #section-contact .gform_wrapper .ginput_container {
+        width: 100% !important;
+    }
+    #section-contact .gform_wrapper li, #section-contact .gform_wrapper form li {
+        width: 100%;
+        margin-right: 0px;
+    }
+    #section-contact .contact-submit-button {
+        margin-left: 15px;
+    }
+}
+@media (max-width: 984px){
+    .dream-icon {
+        width: 161px;
+        height: 196px;
+        margin: 0;
+        background-size: auto 91%;
+        display: inline-block;
+        float: none;
+    }
+    .dream-icon.dream {
+        background-position: 2px bottom;
+    }
+    .dream-icon.plan {
+        background-position: -226px bottom;
+    }
+    .dream-icon.build {
+        background-position: -435px bottom;
+    }
+    #section-dream-plan .container {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px){
+    .navigator ul {
+        display: none;
+    }
+    #section-logo {
+        padding: 80px 0px 50px;
+        background-size: auto 105%;
+    }
+    #section-gallery {
+        height: 415px;
+    }
+    #section-dream-plan {
+        padding: 140px 0px;
+    }
+    #section-dream-plan .container {
+        width: 100%;
+    }
+    #section-contact,#section-intro {
+        padding: 65px 0px 50px;
+    }
+    #section-contact .container,#section-intro .container {
+        padding: 0px 40px;
+    }
+    .content-logo {
+        /*height: 193px;*/
+        background-size: 130px;
+    }
+    .content-logo img {
+        height: 150px;
+    }
+    .content-logo-slogan {
+        background-size: 85% auto;
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+    .dream-icon-list {
+        text-align: center;
+    }
+    .dream-icon {
+        width: 110px;
+        height: 131px;
+        margin: 0;
+        background-size: auto 91%;
+        display: inline-block;
+        float: none;
+    }
+    .row .dream-icon + .dream-icon {
+        margin-left: 5%;
+    }
+    .dream-icon.dream {
+        background-position: 2px bottom;
+    }
+    .dream-icon.plan {
+        background-position: -158px bottom;
+    }
+    .dream-icon.build {
+        background-position: -295px bottom;
+    }
+    .contact-header, .intro-header {
+        margin-bottom: 30px;
+        line-height: 24px;
+        font-size: 17px;
+        margin-top: 40px;
+    }
+    .intro-body.credit {
+        margin-top: 20px;
+        text-align: right;
+    }
+    #section-gallery img {
+        max-width: none;
+    }
+    .intro-body p{
+        padding-right: 25px;
+    }
+    .logo-contact-form img{
+        margin-top: -90px;
+        margin-left: 150px;
+        width: 50px;
+    }
+}
+@media (max-width: 665px) {
+    .link-icon-list {
+        display: block;
+    }
+    .link-list {
+        display: none;
+    }
+    #section-site-url {
+        padding: 0;
+    }
+    #section-copyright {
+        padding: 20px 0px;
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+}
+@media (max-width: 400px) {
+    header {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+    .dream-plan-parallax {
+        background-size: auto 200%;
+    }
+    .dream-icon {
+        width: 80px;
+        height: 131px;
+        margin: 0;
+        background-size: auto 69%;
+        display: inline-block;
+        float: none;
+    }
+    .dream-icon.dream {
+        background-position: 2px center;
+    }
+    .dream-icon.plan {
+        background-position: -118px center;
+    }
+    .dream-icon.build {
+        background-position: -220px center;
+    }
+}
